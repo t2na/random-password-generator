@@ -22,6 +22,8 @@ Screenshot
 
 ![Random Password Generator screenshot](./assets/images/random-password-generator.png)
 
+link to project: https://t2na.github.io/random-password-generator/
+
 License
 
 MIT License

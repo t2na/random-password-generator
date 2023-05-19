@@ -14,8 +14,9 @@ function generatePassword() {
   //first prompt
   var lengthPrompt = prompt("What length do you want? (8-128 characters)");
 
+  // parseInt(lengthPrompt) != lengthPrompt --> from Teacher
   // Makes sure the user enters 8-128 characters
-  while (!lengthPrompt.includes("0123456789") || lengthPrompt < 8 || lengthPrompt > 128) {
+  while (parseInt(lengthPrompt) != lengthPrompt || lengthPrompt > 128 || lengthPrompt < 8) {
     alert("Invalid input. Please enter a number between 8 and 128.");
     lengthPrompt = prompt("What length do you want? (8-128 characters)");
   }
